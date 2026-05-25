@@ -23,6 +23,15 @@ export default function Home() {
   const fraseAtual = frases[(diaDoAno - 1) % frases.length];
   const fraseDoDia = fraseAtual[idioma];
 
+  const dataFormatada = new Intl.DateTimeFormat(
+    idioma === "pt" ? "pt-BR" : "en-US",
+    {
+      day: "2-digit",
+      month: "long",
+      year: "numeric",
+    }
+  ).format(new Date());
+
   function animarBotao() {
     Animated.sequence([
       Animated.timing(scaleAnim, {
@@ -60,6 +69,8 @@ export default function Home() {
               : `Day ${diaDoAno} of the year`}
           </Text>
 
+          <Text style={styles.fullDate}>{dataFormatada}</Text>
+
           <Text style={styles.frase}>"{fraseDoDia}"</Text>
         </View>
 
@@ -84,10 +95,7 @@ export default function Home() {
           </Pressable>
         </Animated.View>
 
-        <Pressable
-          style={styles.secondaryButton}
-          onPress={compartilharFrase}
-        >
+        <Pressable style={styles.secondaryButton} onPress={compartilharFrase}>
           <Text style={styles.secondaryButtonText}>
             {idioma === "pt" ? "Compartilhar" : "Share"}
           </Text>
@@ -143,6 +151,13 @@ const styles = StyleSheet.create({
   date: {
     color: colors.muted,
     fontSize: 14,
+    marginBottom: 8,
+    textAlign: "center",
+  },
+
+  fullDate: {
+    color: colors.footer,
+    fontSize: 12,
     marginBottom: 24,
     textAlign: "center",
   },
