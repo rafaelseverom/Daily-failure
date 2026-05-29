@@ -38,3 +38,13 @@ Em breve...
 ```bash
 npm install
 npx expo start
+
+## 📸 Screenshots
+
+### Português
+
+![Home](screenshots/home.png)
+
+### English
+
+![English](screenshots/english.png)

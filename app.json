@@ -4,7 +4,7 @@
     "slug": "daily-failure",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/images/icon.png",
     "scheme": "dailyfailure",
     "userInterfaceStyle": "dark",
     "newArchEnabled": true,
@@ -13,7 +13,7 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/icon.png",
+          "image": "./assets/images/icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#0f0f0f"
@@ -26,15 +26,22 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/icon.png",
+        "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#0f0f0f"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.rafaelsevero.dailyfailure"
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/icon.png"
+      "favicon": "./assets/images/icon.png"
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "9ae964b9-eae2-4c60-a547-545147009822"
+      }
     }
   }
 }
