@@ -4,16 +4,6 @@ Aplicativo mobile de frases desmotivacionais diárias com humor ácido e minimal
 
 Desenvolvido em React Native + Expo.
 
-## 📸 Screenshots
-
-### Português
-
-![Home](screenshots/home.jpeg)
-
-### English
-
-![English](screenshots/english.jpeg)
----
 
 ## 📱 Funcionalidades
 
