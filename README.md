@@ -4,14 +4,17 @@ Aplicativo mobile de frases desmotivacionais diárias com humor ácido e minimal
 
 Desenvolvido em React Native + Expo.
 
+## ✨ Funcionalidades
 
-## 📱 Funcionalidades
-
-- Frase diferente baseada no dia do ano
-- Alternância PT/EN
+- Frase diária baseada no dia do ano
+- Português e inglês
+- Compartilhamento nativo
+- Interface dark minimalista
+- APK Android
+- Mais de 300 frases desmotivacionais
 - Compartilhamento de frases
 - Splash screen personalizada
-- Interface dark minimalista
+
 - Animações suaves
 
 ---
